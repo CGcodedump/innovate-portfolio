@@ -43,3 +43,15 @@ def activity_two():
     print (alphabet[user_input])
 
 activity_two()
+
+def int_conversion():
+
+    num_input = input("Please input a number.\n")
+
+    try:
+        print(f"Congratulations, {(int(num_input))} is a number.")
+    except:
+        print("\n ERROR: Please input only numerical values.\n")
+        print("**************")
+
+int_conversion()
