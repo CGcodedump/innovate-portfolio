@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>{% block title %} Free Company Estate {% endblock %}</h2>
+
+<p>A great way to meet the crew would be to come on over to our Free Company estate - Sadz-at-Han! There are always people around chatting and having fun. We are located in Shirogane at ward 8, plot 12.</p>
+
+<hr class="solid">
+
+<p>Here are some pictures of our garden area:</p>
+<!-- Carousel -->
+<div id="outdoor" class="carousel slide" data-bs-ride="outdoor_carousel">
+
+<!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#outdoor" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#outdoor" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#outdoor" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#outdoor" data-bs-slide-to="3"></button>
+    </div>
+
+<!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/images/estate-pics/outdoors1.png" alt="Front View" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/outdoors2.png" alt="Decking Area" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/outdoors3.png" alt="Garden Path" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/outdoors4.png" alt="Seating Area" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#outdoor" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#outdoor" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<hr class="solid">
+
+<p>Here are some pictures of our indoor area:</p>
+<!-- Carousel -->
+<div id="indoor" class="carousel slide" data-bs-ride="indoor_carousel">
+
+<!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#indoor" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#indoor" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#indoor" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#indoor" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#indoor" data-bs-slide-to="4"></button>
+    </div>
+
+<!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/images/estate-pics/indoors1.png" alt="Indoor Seating" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/indoors2.png" alt="Bar Area" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/indoors3.png" alt="Dance Floor" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/indoors4.png" alt="Workshop Project Board" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/images/estate-pics/indoors5.png" alt="Fabricator" class="d-block w-100">
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#indoor" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#indoor" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+{% endblock %}

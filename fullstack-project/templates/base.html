@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - Fullstack Demo</title>
+</head>
+<body class = "background">
+<div class = "topnav" id="myTopnav">
+    <a href="{{url_for('home')}}" class ="nav_active">Home</a>
+    <a href="{{url_for('fc_leaders')}}" class ="nav_active">FC Leaders</a>
+    <a href="{{url_for('fc_gallery')}}" class ="nav_active">Gallery</a>
+    <a href="{{url_for('fc_estate')}}" class ="nav_active">FC Estate</a>
+    <a href="{{url_for('contact_us')}}" class ="nav_active">Contact Us</a>
+    <div class = "dropdown">
+        <button class = "dropbtn">Useful Links
+            <i class="site-nav"></i>
+        </button>
+        <div class = "dropdown-content">
+            <a href="https://ffxiv.eorzeacollection.com/" target="_blank">Eorzea Collection</a>
+            <a href="https://saltedxiv.com/" target="_blank">Salted XIV</a>
+            <a href="https://ffxivcollect.com/" target="_blank">FFXIV Collect</a>
+        </div>
+    </div>  
+        <a href="javascript:void(0);" class="icon" onclick="reponsiveToggle()">&#9776;</a>
+    </div>
+</div>
+
+    <div class = "hero-image">
+        <div class="hero-text">
+            <h1>Bahamut Was Right</h1>
+            <p>A FFXIV Free Company</p>
+        </div>
+    </div>
+    <div class = "framing">
+        {% block content %} {% endblock %}
+        
+    </div>
+    <footer id="sitefooter">Bahamut was Right formed 2021 - Data Centre: Chaos - Server: Cerberus - Website created by Connor Gibbons</footer>
+</div>
+
+</body>
+</html>

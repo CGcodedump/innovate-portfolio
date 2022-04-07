@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>{% block title %}Contact Us{% endblock %}</h2>
+
+    <p>If you like what you see and feel like you'll be a good fit, feel to contact us! We're always looking to expand, meet new people and make new friends.</p>
+
+    <p>Leave your character name below and tell us a little about yourself and we'll be in touch as soon as we are able! Thank you for your interest.</p>
+
+    <div class="row">
+        <div class="col-lg">
+            <img class = "contact-pic" src="/static/images/contacttest.png">
+        </div>
+        <div class="col-lg">
+            <form action="/action_page.php">
+                <label for="cname">Character Name</label>
+                <input type="text" id="cname" name="charactername" placeholder="Your character name...">
+                <label for="subject">Tell us about yourself</label>
+                <textarea id="subject" name="subject" placeholder="Don't be shy..." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
