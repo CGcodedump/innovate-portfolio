@@ -2,38 +2,56 @@
 
 {% block content %}
 
-    <h2>{% block title %}Gallery{% endblock %}</h2>
+<div class="container mt-5">
 
-    <p>Welcome to our gallery! Here you'll find various pictures from our weekly events, bosses we've killed, mounts we've all farmed together, weddings of FC members and various other activities we get up too!</p>
-    <br>
-    <hr class="solid">
-    <br>
+  <h2>{% block title %}Gallery{% endblock %}</h2>
+  <br>
+  <p>Welcome to our gallery! Here you'll find various pictures from our weekly events, bosses we've killed, mounts we've all farmed together, weddings of FC members and various other activities we get up too!</p>
+  <br>
+  <hr class="solid">
+  <br>
 
-    <div class="lightbox">
-        <div class="row">
-          <div class="col-lg-6">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-              alt="Table Full of Spices"
-              class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
-            />
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp"
-              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
-              alt="Coconut with Strawberries"
-              class="w-100 shadow-1-strong rounded"
-            />
-          </div>
-          <div class="col-lg-6">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Vertical/1.webp"
-              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
-              alt="Dark Roast Iced Coffee"
-              class="w-100 shadow-1-strong rounded"/>
-          </div>
-        </div>
+  <div class="row">
+
+      <div class="col-lg pt-5">
+        <img src="/static/images/gallery-pics/gallery1.png" class="w-100 shadow-1-strong rounded mb-4" alt="FC members"/>
       </div>
+      <div class="col-lg pt-5">
+        <img src="/static/images/gallery-pics/gallery2.png" class="w-100 shadow-1-strong rounded mb-4" alt="Photography practice"/>
+      </div>
+  </div>
 
+  <hr class="solid">
 
+  <div class="row">
+    <div class="col-lg pt-5">
+      <img src="/static/images/gallery-pics/gallery3.png" class="w-100 shadow-1-strong rounded mb-4" alt="Dumb fun"/>
+    </div>
+    <div class="col-lg pt-5">
+      <img src="/static/images/gallery-pics/gallery4.png" class="w-100 shadow-1-strong rounded mb-4" alt="Chi Spawn"/>
+    </div>
+  </div>
+
+  <hr class="solid">
+
+  <div class="row">
+    <div class="col-lg pt-5">
+      <img src="/static/images/gallery-pics/gallery5.png" class="w-100 shadow-1-strong rounded mb-4" alt="Chilling on mounts"/>
+    </div>
+    <div class="col-lg pt-5">
+      <img src="/static/images/gallery-pics/gallery6.png" class="w-100 shadow-1-strong rounded mb-4" alt="Convoy"/>
+    </div>
+  </div>
+
+  <hr class="solid">
+
+  <div class="row">
+    <div class="col-lg pt-5">
+      <img src="/static/images/gallery-pics/gallery7.png" class="w-100 shadow-1-strong rounded mb-4" alt="Group pose at a wedding"/>
+    </div>
+    <div class="col-lg pt-5">
+      <img src="/static/images/gallery-pics/gallery8.png" class="w-100 shadow-1-strong rounded mb-4" alt="Bride and Groom"/>
+    </div>
+  </div>
+</div>
 {% endblock %}
